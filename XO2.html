@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <!-- Link to css page -->
+    <link rel="stylesheet" href="XO2.css">
+    <!-- Link to the Google Fonts to get from it the fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start screen  -->
+    <div id="start-screen">
+        <h1> Hi <br><br> welcome to Tic Tac Toe game </h1>
+        <h2>Choose your starting player</h2>
+        <button id="start-x">Start as X</button> <!--here button of start as x-->
+        <button id="start-o">Start as O</button> <!--here button of start as O-->
+        <h3> This game is made by <br><br> Zaineb sayed mahdi <br><br>And <br><br>Fatima Ahmed </h3>
+    </div>
+    <!-- Main game grid with 9 boxes of xo gane board -->
+    <div class="main-grid">
+        <div class="box align">0</div>
+        <div class="box align">1</div>
+        <div class="box align">2</div>
+        <div class="box align">3</div>
+        <div class="box align">4</div>
+        <div class="box align">5</div>
+        <div class="box align">6</div>
+        <div class="box align">7</div>
+        <div class="box align">8</div>
+    </div>
+    <!-- Turn indicator showing whose turn it is x or o -->
+    <div class="turn-container">
+        <h3>Turn For</h3>
+        <div class="turn-indicator">
+            <span id="current-turn"> </span> <!-- here it shows whos turn -->
+        </div>
+    </div>
+    <!-- Result display area -->
+    <h2 id="results"></h2> <!-- it show when x or o win in the current game -->
+    <!-- Play Again button -->
+    <button id="play-again">Play Again</button>
+    <!-- Scoreboard displaying the scores for X and O how much each of them win  -->
+    <div class="scoreboard">
+        <div>X: <span id="x-score">0</span></div>
+        <div>O: <span id="o-score">0</span></div>
+    </div>
+    
+    <!-- Script tag to include the JavaScript file -->
+    <script src="XO2.js"></script>
+</body>
+</html>

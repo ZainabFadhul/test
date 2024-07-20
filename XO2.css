@@ -1,0 +1,150 @@
+/* Global styles */
+* {
+    color: white; /* Default text color */
+    font-family: 'Press Start 2P', cursive; /* Retro font */
+}
+/* Centering elements of x and o in the board */
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Body styles */
+body {
+    background-color: #252A34; /* Dark background color */
+    width: 100vw;
+    text-align: center; /* we make text in bod in center */
+    padding-top: 5vh; /* Top padding*/
+}
+/* Start screen styles */
+#start-screen {
+  border: 3px solid #fff; /* White border */
+  padding: 20px; /*add space between the content of an element and its border*/
+    background: linear-gradient(to bottom, #1b2735, #090a0f); /* Gradient background */
+    box-shadow: 0 0 15px #fff; /* White shadow */
+    border-radius: 10px; /* how much round the corners of an element's border*/
+    max-width: 400px; /* Maximum width of start screen */
+    margin: auto; /* Center horizontally make start screen be on the center of the page */
+}
+#start-screen h1 {
+    font-size: 1.6rem; /* text size of h1 : Hi welcome to tic tac toe game */
+    margin-bottom: 20px; /* Bottom margin adding spaces between text and the text below it */
+}
+
+#start-screen h2 {
+    font-size: 1.2rem; /*text size of h2 : Choose your starting player*/
+    margin-bottom: 20px; /* Bottom margin adding spaces between text and the text below it*/
+}
+
+#start-screen h3 {
+    font-size: 0.8rem;/*text size of h3 : This game is made by Zaineb sayed mahdi And Fatima Ahmed*/
+    margin-top: 40px; /* Top margin adding spaces between text and the text upper it*/
+}
+
+#start-screen button {
+    background-color: #808080; /* Grey background */
+    padding: 10px 25px;/*here 10 px mean padding at the top and bottom of the button / 25 px mean padding on the right and left sides of the button*/
+    border: none; /*removing boarder of the buttons */
+    font-size: 1rem;
+    border-radius: 5px; /* how much round the corners of the button border*/
+    cursor: pointer;/*change the mouse cursor to a pointer*/
+    margin: 10px; /* creating space around button*/
+    color: #fff; /* White text color */
+    text-shadow: 1px 1px #000; /* Black shadow on the text of the buttons */
+}
+
+#start-screen button:hover {
+    background-color: #fff; /* White background on hover */
+    color: #000; /* Black text color on hover */
+}
+
+/* Turn indicator styles */
+.turn-container {
+    width: 20%; /* width of turn indicator box*/
+    margin: 0 auto; /* make it in center */
+}
+
+.turn-container h3 {
+    color: #fff; /* White text color for turn for*/
+    font-size: 1.2rem; /* text size of turn for */
+}
+
+.turn-indicator {
+    background-color: #808080; /* Grey background box */
+    border: 2px solid #000; /* boreder lines of box*/
+    border-radius: 5px; /* how much round the corners of the button border*/
+    padding: 10px 0; /*here 10 px mean padding at the top and bottom of the box / 0 px mean padding on the right and left sides of the box*/
+    color: #fff; /* White text color */
+    text-shadow: 1px 1px #000; /* Black shadow to make it like 3d vip*/
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Main grid styles */
+.main-grid {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);/*creating 3 equal width columns in the grid*/
+    grid-template-rows: repeat(3, 1fr);/*creating 3 equal hight row in the grid*/
+    height: 250px;
+    width: 250px;
+    margin: 20px auto; /* make grid in center  */
+    border: 2px solid #000; /* solid black border with 2 px wide around the grid*/
+    box-shadow: 0 0 20px #08D9D6; /* making shadow around the grid */
+}
+/*inside grid box css */
+.box {
+    cursor: pointer; /*change the mouse cursor to a pointer on the grid*/
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid #000;
+    color: #fff; /* White text color */
+    text-shadow: 1px 1px #000; /* Black shadow to make it like 3d vip*/
+}
+
+.box:hover {
+    background-color: #808080; /* Grey background on hover */
+}
+
+/* Play again button styles */
+#play-again {
+    background-color: #08D9D6; /* Light blue background */
+    padding: 10px 25px; /*here 10 px mean padding at the top and bottom of the button / 25 px mean padding on the right and left sides of the button*/
+    border: none;/*removing border of button*/
+    font-size: 1.2rem;
+    border-radius: 5px;/* how much round the corners of the button border*/
+    cursor: pointer; /*change the mouse cursor to a pointer on the grid*/
+    color: #fff; /* White text color */
+    text-shadow: 1px 1px #000; /* Black shadow add 3d vip */
+    margin: 0 auto; /* make it in center */
+}
+
+#play-again:hover {
+    background-color: #0aa8bd; /* Darker blue background on hover */
+    color: #000; /* Black text color on hover */
+}
+
+/* Scoreboard styles */
+.scoreboard {
+    display: flex; /* control container's children*/
+    justify-content: center; /*maing it in center*/
+    margin-top: 25px; /* Top margin adding spaces between text and the text upper it*/
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* White text color */
+    text-shadow: 1px 1px #000; /* Black shadow  */
+}
+.scoreboard > div {
+    margin: 0 10px; /*space between children result of x and result of o*/
+    padding: 10px 20px; /*here 10 px mean padding at the top and bottom of the button / 20 px mean padding on the right and left sides of the button*/
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px; /* how much round the corners of the button border*/
+}
+.scoreboard {
+    display: none;
+}
+
+#x-score,
+#o-score {
+    margin-left: 10px; /*10-pixel space between the left edge of the elements and whatever is to their left*/
+}
